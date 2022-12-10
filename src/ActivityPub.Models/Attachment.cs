@@ -9,16 +9,18 @@ using System.Text.Json.Serialization;
 
 namespace ActivityPub.Models
 {
-    public record class WebFingerLinks
+    public record class Attachment
     {
-        [JsonPropertyName( "rel" )]
-        public string Rel => "self";
-
         [JsonPropertyName( "type" )]
-        public string Type => "application/activity+json";
-
-        [JsonPropertyName( "href" )]
         [JsonIgnore( Condition = JsonIgnoreCondition.WhenWritingNull )]
-        public Uri? Href { get; set; }
+        public string? Type { get; init; }
+
+        [JsonPropertyName( "name" )]
+        [JsonIgnore( Condition = JsonIgnoreCondition.WhenWritingNull )]
+        public string? Name { get; init; }
+
+        [JsonPropertyName( "value" )]
+        [JsonIgnore( Condition = JsonIgnoreCondition.WhenWritingNull )]
+        public string? Value { get; init; }
     }
 }

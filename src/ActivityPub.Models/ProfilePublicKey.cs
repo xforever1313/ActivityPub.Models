@@ -9,14 +9,18 @@ using System.Text.Json.Serialization;
 
 namespace ActivityPub.Models
 {
-    public record class WebFinger
+    public record class ProfilePublicKey
     {
-        [JsonPropertyName( "subject" )]
+        [JsonPropertyName( "id" )]
         [JsonIgnore( Condition = JsonIgnoreCondition.WhenWritingNull )]
-        public string? Subject { get; init; }
+        public string? Id { get; init; }
 
-        [JsonPropertyName( "links" )]
+        [JsonPropertyName( "owner" )]
         [JsonIgnore( Condition = JsonIgnoreCondition.WhenWritingNull )]
-        public WebFingerLinks? Links { get; init; }
+        public string? Owner { get; init; }
+
+        [JsonPropertyName( "publicKeyPem" )]
+        [JsonIgnore( Condition = JsonIgnoreCondition.WhenWritingNull )]
+        public string? PublicKeyPem { get; init; }
     }
 }
