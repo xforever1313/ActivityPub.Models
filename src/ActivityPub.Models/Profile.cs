@@ -19,10 +19,6 @@ namespace ActivityPub.Models
             "https://w3id.org/security/v1"
         };
 
-        [JsonPropertyName( "outbox" )]
-        [JsonIgnore( Condition = JsonIgnoreCondition.WhenWritingNull )]
-        public Uri? OutBox { get; init; }
-
         [JsonPropertyName( "inbox" )]
         [JsonIgnore( Condition = JsonIgnoreCondition.WhenWritingNull )]
         public Uri? Inbox { get; init; }
@@ -47,11 +43,9 @@ namespace ActivityPub.Models
         [JsonIgnore( Condition = JsonIgnoreCondition.WhenWritingNull )]
         public Uri? Icon { get; init; }
 
-        public DateTime? PublishedDate { get; init; }
-
         [JsonPropertyName( "published" )]
         [JsonIgnore( Condition = JsonIgnoreCondition.WhenWritingNull )]
-        public string? Published => this.PublishedDate?.ToString( "O" ) ?? null;
+        public string? Published { get; init; }
 
         [JsonPropertyName( "summary" )]
         [JsonIgnore( Condition = JsonIgnoreCondition.WhenWritingNull )]
