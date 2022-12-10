@@ -1,0 +1,11 @@
+[Oo]bj/
+[Bb]in/
+packages/
+TestResults/
+tools/
+.vs
+.vscode
+dist/
+CodeCoverage/
+.cake/
+.dotnet/

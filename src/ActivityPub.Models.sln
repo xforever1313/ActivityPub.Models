@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ActivityPub.Models", "ActivityPub.Models\ActivityPub.Models.shproj", "{27570BD7-A39C-4755-8521-ACDB4EBACED4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibActivityPub.Models", "LibActivityPub.Models\LibActivityPub.Models.csproj", "{3E7E6CD6-06D6-4851-A546-1ABC0A5D36E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E7E6CD6-06D6-4851-A546-1ABC0A5D36E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7E6CD6-06D6-4851-A546-1ABC0A5D36E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7E6CD6-06D6-4851-A546-1ABC0A5D36E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7E6CD6-06D6-4851-A546-1ABC0A5D36E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F80AA75-B6CD-4879-A6C7-6BB4417A44B8}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ActivityPub.Models\ActivityPub.Models.projitems*{27570bd7-a39c-4755-8521-acdb4ebaced4}*SharedItemsImports = 13
+		ActivityPub.Models\ActivityPub.Models.projitems*{3e7e6cd6-06d6-4851-a546-1abc0a5d36e5}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal
