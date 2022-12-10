@@ -5,6 +5,7 @@
 //          http://www.boost.org/LICENSE_1_0.txt)
 //
 
+using System;
 using System.Text.Json.Serialization;
 
 namespace ActivityPub.Models
