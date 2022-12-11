@@ -21,6 +21,10 @@ namespace ActivityPub.Models
         [JsonPropertyName( "type" )]
         public string Type => "OrderedCollection";
 
+        [JsonPropertyName( "id" )]
+        [JsonIgnore( Condition = JsonIgnoreCondition.WhenWritingNull )]
+        public string? Id { get; init; }
+
         [JsonPropertyName( "totalItems" )]
         [JsonIgnore( Condition = JsonIgnoreCondition.WhenWritingNull )]
         public int? TotalItems
