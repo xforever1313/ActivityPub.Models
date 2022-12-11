@@ -10,6 +10,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Attachment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Following.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FollowingCollection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Profile.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ProfilePublicKey.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WebFinger.cs" />
