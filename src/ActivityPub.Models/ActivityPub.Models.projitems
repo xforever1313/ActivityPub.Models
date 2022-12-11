@@ -9,9 +9,14 @@
     <Import_RootNamespace>ActivityPub.Models</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Activity.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Attachment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CreateActivity.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Following.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FollowingCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LinkType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NoteLink.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OutboxCollection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Profile.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ProfilePublicKey.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WebFinger.cs" />
