@@ -17,6 +17,6 @@ namespace ActivityPub.Models
 
         [JsonPropertyName( "links" )]
         [JsonIgnore( Condition = JsonIgnoreCondition.WhenWritingNull )]
-        public WebFingerLinks? Links { get; init; }
+        public WebFingerLinks[]? Links { get; init; }
     }
 }
